@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: white;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+        }
+
+        .project-title {
+            font-size: 24px;
+            margin-left: 20px;
+            color: #333;
+        }
+
+        .contact-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .whatsapp-button {
+            display: flex;
+            align-items: center;
+            color: #25D366;
+        }
+
+        .navigation {
+            background: #574b8b;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .nav-text {
+            font-size: 18px;
+        }
+
+        .main-content {
+            display: flex;
+            padding: 20px;
+            gap: 40px;
+        }
+
+        .journey-planner {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .tagline {
+            font-style: italic;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 28px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .journey-form {
+            border: 1px solid #ccc;
+            border-radius: 15px;
+            padding: 30px;
+        }
+
+        .station-select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #666;
+        }
+
+        .label {
+            color: #e84393;
+            font-size: 18px;
+            margin-top: 20px;
+            display: block;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            align-items: center;
+        }
+
+        .show-route-btn {
+            background: #e84393;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .reset-btn {
+            color: #3498db;
+            background: none;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .metro-image {
+            flex: 1;
+            max-width: 50%;
+        }
+
+        .metro-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-section">
+            <img src="./assets/logo.jpeg" alt="Pune Metro Logo" class="logo">
+            <h1 class="project-title">PUNE METRO RAIL PROJECT</h1>
+        </div>
+        <div class="contact-section">
+            <div class="whatsapp-button">
+                <img height="80" width="80" src="./assets/icon.svg" alt="WhatsApp Icon">
+                <a href="https://wa.me/919420101990" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div>9420101990</div>
+                    <div style="max-width: 100px; font-size: 12px; color: black;">Click here for WhatsApp Ticket Booking</div>
+                </a>
+            </div>
+            <div>SCREEN READER | Language ▼</div>
+        </div>
+    </header>
+
+    <nav class="navigation">
+        <span class="nav-text">ABOUT US / PROJECT / PASSENGER INFORMATION / CONTACT / CAREERS</span>
+    </nav>
+
+    <main class="main-content">
+        <div class="journey-planner">
+            <div class="tagline">Fast and Secure</div>
+            <div class="subtitle">PUNE METRO, YOUR COMMUTE COMPANION</div>
+
+            <div class="journey-form">
+                <label class="label">From</label>
+                <select class="station-select">
+                    <option>-- Select Station --</option>
+                    <option>Anand Nagar</option>
+                    <option>Bopodi</option>
+                    <option>Bund Garden</option>
+                    <option>Chhatrapati Sambhaji Udyan</option>
+                    <option>Civil Court</option>
+                    <option>Dapodi</option>
+                    <option>Deccan Gymkhana</option>
+                    <option>Garware College</option>
+                    <option>Ideal Colony</option>
+                    <option>Kalyani Nagar</option>
+                    <option>Kasba Peth</option>
+                    <option>Kasarwadi</option>
+                    <option>Mandai</option>
+                    <option>Mangalwar Peth</option>
+                    <option>Nal Stop</option>
+                    <option>Nashik Phata</option>
+                    <option>PCMC Bhavan</option>
+                    <option>Phugewadi</option>
+                    <option>PMC Bhavan</option>
+                    <option>Pune Railway Station</option>
+                    <option>Ruby Hall Clinic</option>
+                    <option>Sant Tukaram Nagar</option>
+                    <option>Shivaji Nagar</option>
+                    <option>Vanaz</option>
+                    <option>Swargate</option>
+                    <option>Ramwadi</option>
+                    <option>Yerwada</option>
+                </select>
+
+                <label class="label">To</label>
+                <select class="station-select">
+                    <option>-- Select Station --</option>
+                    <option>Anand Nagar</option>
+                    <option>Bopodi</option>
+                    <option>Bund Garden</option>
+                    <option>Chhatrapati Sambhaji Udyan</option>
+                    <option>Civil Court</option>
+                    <option>Dapodi</option>
+                    <option>Deccan Gymkhana</option>
+                    <option>Garware College</option>
+                    <option>Ideal Colony</option>
+                    <option>Kalyani Nagar</option>
+                    <option>Kasba Peth</option>
+                    <option>Kasarwadi</option>
+                    <option>Mandai</option>
+                    <option>Mangalwar Peth</option>
+                    <option>Nal Stop</option>
+                    <option>Nashik Phata</option>
+                    <option>PCMC Bhavan</option>
+                    <option>Phugewadi</option>
+                    <option>PMC Bhavan</option>
+                    <option>Pune Railway Station</option>
+                    <option>Ruby Hall Clinic</option>
+                    <option>Sant Tukaram Nagar</option>
+                    <option>Shivaji Nagar</option>
+                    <option>Vanaz</option>
+                    <option>Swargate</option>
+                    <option>Ramwadi</option>
+                    <option>Yerwada</option>
+                </select>
+
+                <div class="button-group">
+                    <button onclick="showRoute()" class="show-route-btn">Show Route & Fare</button>
+                    <button onclick="reset()" class="reset-btn">↻ Reset</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="metro-image">
+            <img src="./assets/train.jpeg" alt="Pune Metro Train">
+        </div>
+    </main>
+    <script>
+        function showRoute() {
+            const fromStation = document.querySelector('.journey-form select:nth-child(2)').value;
+            const toStation = document.querySelector('.journey-form select:nth-child(4)').value;
+
+            if (fromStation === '-- Select Station --' || toStation === '-- Select Station --') {
+                alert('Please select both "From" and "To" stations.');
+                return;
+            }
+
+            const encodedFrom = encodeURIComponent(fromStation);
+            const encodedTo = encodeURIComponent(toStation);
+
+            window.location.href = `first_page.html?from=${encodedFrom}&to=${encodedTo}`;
+        }
+
+        //reset function will reset the form
+        function reset() {
+            const inputFields = document.querySelectorAll('.journey-form select');
+            inputFields.forEach(input => input.value = '');
+        }
+    </script>
+</body>
+
+</html>

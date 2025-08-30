@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            width: 100%;
+            background-color: #574b8b;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            border-radius: 50%;
+            padding: 5px;
+        }
+
+        .header-text {
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 100px;
+        }
+
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .login-title {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .login-subtitle {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .input-field {
+            width: 80%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 25px;
+            font-size: 16px;
+        }
+
+        .captcha-display {
+            border: 1px solid black;
+            padding: 10px 20px;
+            font-size: 24px;
+            margin: 20px 0;
+            letter-spacing: 2px;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .btn {
+            padding: 8px 30px;
+            border: 1px solid black;
+            background: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .forgot-password {
+            color: black;
+            text-decoration: underline;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="./assets/logo.jpeg" alt="Pune Metro Logo" class="logo">
+        <div class="header-text">METRO ADMINISTRATION SYSTEM</div>
+    </header>
+
+    <main class="login-container">
+        <h1 class="login-title">Login</h1>
+        <p class="login-subtitle">Please enter your login details</p>
+
+        <input type="text" placeholder="Full Name" class="input-field">
+        <input type="text" placeholder="Mobile No." class="input-field">
+        <input type="text" placeholder="Captcha" class="input-field">
+
+        <div class="captcha-display">XC2QW</div>
+
+        <div class="button-container">
+            <button onclick="login()" class="btn">Login</button>
+            <button onclick="reset()" class="btn">Reset</button>
+        </div>
+
+        <!-- <a href="#" class="forgot-password">Forgot Password?</a> -->
+    </main>
+    <script>
+        function login() {
+            window.location.href = "third_page.html";
+        }
+
+        //reset function will reset the form
+        function reset() {
+            const inputFields = document.querySelectorAll('.login-container input');
+            inputFields.forEach(input => input.value = '');
+        }
+    </script>
+</body>
+
+</html>
