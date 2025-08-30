@@ -14,25 +14,24 @@ The **Pune Metro Website (Basic)** is a simple web-based project that simulates 
 
 ---
 
-
 ## 🖼️ Screenshots
 
 ### 🔑 Login Page
-![Login](screenshots/Login.png)
+![Login](Login.png)
 
 ### 🚉 Journey Planner
-![Journey](screenshots/JourneyPlanner.png)
+![Journey](JourneyPlanner.png)
 
 ### 📍 Route & Fare
-![Route](screenshots/Route.png)
+![Route](Route.png)
 
 ### 💳 Payment Gateway
-![Payment](screenshots/Payment.png)
+![Payment](Payment.png)
 
 ### 🎫 Confirmation Page
-![Confirmation](screenshots/Confirmation.png)
+![Confirmation](Confirmation.png)
 
----
+
 
 ## 🔑 Technologies Used
 - **Frontend:** HTML5, CSS3, JavaScript  
